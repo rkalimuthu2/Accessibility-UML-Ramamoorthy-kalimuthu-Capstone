@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="icon" href="./assets/Accessibility.png" />
+  <meta http-equiv="Cache-Control" content="max-age=36000" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Accessibility Project</title>
+  <meta name="description" content="Learn the Best practices for Accessibility" />
+</head>
+
+<body>
+  <header class="header-section">
+    <nav class="navbar">
+      <div class="brand-icon">
+        <div class="top-left"></div>
+        <div class="bottom-right"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about-us-page">About Us</a><span>|</span></li>
+        <li><a href="#contact-us-page">Contact Us</a><span>|</span></li>
+        <li><a href="#blog-page">Blog</a><span>|</span></li>
+        <li><a href="#footer-page">Site Map</a><span>|</span></li>
+        <li>
+          <a href="#">Eng <span>&#x25BE;</span></a>
+        </li>
+      </ul>
+      <form class="search-form" role="search">
+        <input type="text" placeholder="Search this site" aria-label="Search this site" />
+
+        <button type="submit" aria-label="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </nav>
+  </header>
+
+  <main>
+    <section class="first-section-container" id="blog-page">
+      <div class="left-side">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus. Senectus
+          sed maecenas viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed
+          gravida. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <button class="buy-now-btn" type="submit" aria-label="submit">Buy Now</button>
+      </div>
+      <div class="right-side">
+        <img src="./assets/LeafImage.jpg" alt="Leaf image" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="about-us-container" id="about-us-page">
+      <div class="content-1">
+        <img src="./assets/AboutUsImage.jpg" alt="About Us Image" loading="lazy" />
+        <div class="text-content">
+          <h3>About Us</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+            tincidunt posuere eu risus cursus. Senectus sed maeaecenas viverra
+            tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+            Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+            sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+            tincidunt posuere eu risus cursus.
+          </p>
+          <a href="#">Learn more about</a><span> →</span>
+        </div>
+      </div>
+      <div class="content-2">
+        <img src="./assets/AboutUsImage.jpg" alt="About Us Image" loading="lazy" />
+        <div class="text-content">
+          <h3>About Us 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+            tincidunt posuere eu risus cursus. Senectus sed maeaecenas viverra
+            tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+            Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+            sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+            tincidunt posuere eu risus cursus.
+          </p>
+          <a href="#">Learn more about</a><span> →</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us-container" id="contact-us-page">
+      <div class="contact-us">
+        <div class="contact-info">
+          <div class="contact-info-content">
+            <h4>Contact Us</h4>
+            <p>
+              Fill up the form and our team will get back to you within 24
+              hours. Happy to see your message!
+            </p>
+            <ul>
+              <li><i class="fab fa-facebook"></i> +380 93 15 32 456</li>
+              <li><i class="fab fa-facebook"></i> example@gmail.com</li>
+              <li><i class="fab fa-facebook"></i> Pidmurma 5a, Lviv</li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="contact-form" style="max-width: 898px; height: 637px">
+        <form>
+          <div class="form-group">
+            <div class="form-field">
+              <label for="first-name"><span class="required">*</span>First Name</label>
+              <input type="text" id="first-name" name="first-name" required />
+            </div>
+            <div class="form-field">
+              <label for="last-name"><span class="required">*</span>Last Name</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="form-field">
+              <label for="phone-number">Phone Number</label>
+              <input type="tel" id="phone-number" name="phone-number" />
+            </div>
+          </div>
+          <div class="form-field">
+            <fieldset class="role-options">
+              <input type="radio" id="ui-developer" name="role" value="ui-developer" />
+              <label for="ui-developer">UI Developer</label>
+
+              <input type="radio" id="ux-designer" name="role" value="ux-designer" />
+              <label for="ux-designer">UI/UX Designer</label>
+
+              <input type="radio" id="accessibility-expert" name="role" value="accessibility-expert" />
+              <label for="accessibility-expert">Accessibility Expert</label>
+
+              <input type="radio" id="qa-engineer" name="role" value="qa-engineer" />
+              <label for="qa-engineer">QA Engineer</label>
+
+              <input type="radio" id="other" name="role" value="other" />
+              <label for="other">Other</label>
+            </fieldset>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" cols="30" placeholder="Text here..."></textarea>
+          </div>
+          <div class="form-group">
+            <div class="form-field" id="accept-terms">
+              <input type="checkbox" name="terms" id="term-1" required />
+              <label for="term-1">Accept the Terms</label>
+            </div>
+            <div class="form-field" id="accept-terms">
+              <input type="checkbox" name="terms" id="term-2" required />
+              <label for="term-2">Accept the Terms 2</label>
+            </div>
+          </div>
+          <button type="submit" class="send-message-btn" aria-label="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-container" id="footer-page">
+    <div class="content-1">
+      <div class="item-1">
+        <h4>PlantMe</h4>
+        <p>
+          Subscribe and be the first to know about our news and promotions
+        </p>
+        <form class="subscibe-form">
+          <div class="email-input">
+            <label for="subscribe-email" class="visually-hidden">Email</label>
+            <input type="email" id="subscribe-email" placeholder="example@gmail.com" name="email" />
+          </div>
+          <button class="subscribe-btn" type="submit" aria-label="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="item-2">
+        <ul>
+          <li><a href="#about-us-page" aria-label="about-us">About Us</a></li>
+          <li><a href="#contact-us-page" aria-label="contact-us">Contact Us</a></li>
+          <li><a href="#blog-page" aria-label="blogs">Blog</a></li>
+          <li><a href="#footer-page" aria-label="footer">Site Map</a></li>
+        </ul>
+      </div>
+      <div class="item-3">
+        <p>Contacts</p>
+
+        <div class="phone-number">
+          <a href="tel:+1234567890" aria-label="phone-number">+38 063 072 0121</a>
+        </div>
+        <div class="mail-to">
+          <a href="mailto:plantme.store@gmail.com" aria-label="mail-to">plantme.store@gmail.com</a>
+        </div>
+        <div class="card-container">
+          <img src="./assets/visa.png" alt="Visa card logo" width="50" height="28" loading="lazy" class="visa-card" />
+          <img src="./assets/mastercard.png" alt="Master card logo" width="50" height="41" loading="lazy"
+            class="master-card" />
+        </div>
+      </div>
+    </div>
+    <div class="content-2">
+      <p class="copy-right">&copy; 2002 PlantMe. All rights reserved.</p>
+      <nav aria-label="footer-navigation">
+        <ul>
+          <li><a href="/privacy-policy" aria-label="privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms-of-service" aria-label="terms-of-service"> Terms of Service</a></li>
+          <li><a href="/language" aria-label="language">Language</a></li>
+        </ul>
+      </nav>
+  </footer>
+</body>
+
+</html>
